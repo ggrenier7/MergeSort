@@ -1,0 +1,29 @@
+package MergeSorting;
+
+public class mergeSort {
+	public static void main(String[] args){
+		//Example 10.1
+		
+		int [] List1 = {15, 20, 25, 35, 45, 60, 65, 70};
+		int [] List2 = {10, 30, 40, 50, 55};
+		int [] List3 = new int [List1.length + List2.length];
+		int position1 = 0;
+		int position2 = 0;
+		int position3 = 0;
+	//1
+		int x = List1[position1];
+		int y = List2[position2];
+	//2
+		if (x>y){
+			List3[position3]= y;
+		}
+    if (y>x){
+			List3[position3]= x;
+		}
+		if (x == y){
+			//we need to put both x and y into two separate elements- figure out later
+		}
+	}
+}
+
+
